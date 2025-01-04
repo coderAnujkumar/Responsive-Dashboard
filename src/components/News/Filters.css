@@ -1,0 +1,74 @@
+.filters-container {
+    display: flex;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #f9fafb;
+    border-radius: 8px;
+  }
+  .filters-container input, .filters-container select {
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+  }
+  .filters-container button {
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #6366f1;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  .filters-container button:hover {
+    background-color: #4f46e5;
+  }
+  .filters-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #f9fafb;
+    border-radius: 8px;
+  }
+  
+  .filters-container input,
+  .filters-container select {
+    flex: 1 1 calc(50% - 1rem); /* Adjust for smaller screens */
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #d1d5db;
+  }
+  
+  .filters-container button {
+    flex: 1 1 100%; /* Full-width button on smaller screens */
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #6366f1;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .filters-container button:hover {
+    background-color: #4f46e5;
+  }
+  
+  @media (min-width: 768px) {
+    .filters-container {
+      justify-content: space-between;
+    }
+  
+    .filters-container input,
+    .filters-container select {
+      flex: 1 1 calc(25% - 1rem); /* Adjust for larger screens */
+    }
+  
+    .filters-container button {
+      flex: 0 0 auto; /* Keep button size fixed */
+      max-width: 150px;
+    }
+  }
+  

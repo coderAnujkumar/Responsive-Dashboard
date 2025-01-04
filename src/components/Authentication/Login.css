@@ -1,0 +1,119 @@
+/* General styles for the body */
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(to bottom right, #6366f1, #4f46e5); /* Gradient background */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #ffffff;
+  }
+  
+  /* Login container */
+  .login-container {
+    background: #ffffff; /* White background */
+    padding: 2.5rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Elevated shadow */
+    width: 100%;
+    max-width: 400px; /* Responsive width */
+    text-align: center;
+  }
+  
+  /* Login heading */
+  .login-container h1 {
+    margin: 0 0 2rem;
+    font-size: 2rem;
+    font-weight: bold;
+    color: #1f2937; /* Dark gray */
+  }
+  
+  /* Input fields */
+  .login-container input {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 1rem;
+    color: #374151; /* Medium gray */
+    box-sizing: border-box;
+    background-color: #f9fafb; /* Light gray background */
+    transition: all 0.3s ease;
+  }
+  
+  /* Input focus and hover */
+  .login-container input:hover {
+    background-color: #f3f4f6; /* Slightly darker light gray */
+  }
+  
+  .login-container input:focus {
+    outline: none;
+    border-color: #4f46e5; /* Indigo focus color */
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.3); /* Subtle glow */
+  }
+  
+  /* Login button */
+  .login-container button {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1.1rem;
+    font-weight: bold;
+    background: linear-gradient(to right, #6366f1, #4f46e5); /* Gradient button */
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: transform 0.2s ease, background-color 0.3s ease;
+  }
+  
+  /* Button hover and active effects */
+  .login-container button:hover {
+    background: linear-gradient(to right, #4f46e5, #3b82f6); /* Brighter gradient */
+    transform: translateY(-2px); /* Slight lift on hover */
+  }
+  
+  .login-container button:active {
+    transform: translateY(1px); /* Subtle press effect */
+  }
+  
+  /* Error message styling */
+  .login-container p {
+    color: #ef4444; /* Red for error */
+    margin: 1rem 0;
+    font-size: 0.9rem;
+    text-align: center;
+  }
+  
+  /* Add some animation to the container */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .login-container {
+    animation: fadeIn 0.5s ease-in-out;
+  }
+  
+  /* Optional: Footer or links (if needed) */
+  .login-container a {
+    display: inline-block;
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    color: #6366f1; /* Indigo links */
+    text-decoration: none;
+    transition: color 0.2s ease;
+  }
+  
+  .login-container a:hover {
+    color: #4f46e5; /* Brighter indigo */
+  }
+  

@@ -1,0 +1,40 @@
+/* General styles */
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f3f4f6; /* Light background */
+  color: #374151; /* Dark gray text */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full screen height */
+}
+
+/* App container */
+.app-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: #ffffff; /* White background */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Page heading */
+.app-container h1 {
+  text-align: center;
+  color: #1f2937; /* Darker gray */
+  margin-bottom: 2rem;
+  font-size: 2rem;
+}
+
+/* Links (optional if needed) */
+a {
+  text-decoration: none;
+  color: #6366f1; /* Indigo for links */
+}
+
+a:hover {
+  color: #4f46e5; /* Darker indigo on hover */
+}

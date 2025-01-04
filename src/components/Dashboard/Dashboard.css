@@ -1,0 +1,80 @@
+/* General Container */
+.dashboard-container {
+    overflow: auto; /* Allow scrolling if content exceeds the viewport */
+    position: relative; /* Ensure proper stacking and layout */
+    padding: 2rem 1rem; /* Padding around the container */
+    max-width: 1200px; /* Limit container width */
+    margin: 0 auto; /* Center the container */
+    background-color: #f9fafb; /* Light background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    border-radius: 8px; /* Rounded corners */
+    min-height: 100vh; /* Ensure it takes the full viewport height */
+  }
+  
+  /* Dashboard Heading */
+  .dashboard-container h1 {
+    display: block; /* Ensure the heading is displayed */
+    font-size: 2.5rem; /* Large size for visibility */
+    font-weight: bold; /* Make it stand out */
+    color: #1f2937; /* Dark gray for readability */
+    margin-bottom: 1.5rem; /* Space below the heading */
+    text-align: center; /* Center align the heading */
+  }
+  
+  /* Global Search Bar */
+  .global-search {
+    width: 100%; /* Full width for responsiveness */
+    padding: 0.8rem;
+    margin: 1.5rem 0; /* Space above and below */
+    border-radius: 6px; /* Rounded corners */
+    border: 1px solid #d1d5db; /* Subtle border */
+    font-size: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #ffffff; /* White background */
+    color: #374151; /* Dark gray text */
+  }
+  
+  /* Dashboard Section */
+  .dashboard-section {
+    margin-top: 2rem; /* Space between sections */
+    padding: 1rem; /* Inner padding for sections */
+    background-color: #ffffff; /* Section background */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    width: 100%; /* Full width of the container */
+    max-width: 900px; /* Limit section width */
+    margin: 0 auto; /* Center align the section */
+  }
+  
+  /* Ensure all content is visible */
+  body, html {
+    height: 100%; /* Full viewport height */
+    margin: 0; /* Reset default margin */
+    overflow: auto; /* Enable scrolling */
+  }
+  
+  #root {
+    height: 100%; /* Full viewport height */
+  }
+  
+  /* Responsive Adjustments */
+  @media (max-width: 768px) {
+    .dashboard-container {
+      padding: 1rem; /* Reduce padding for smaller screens */
+    }
+  
+    .dashboard-container h1 {
+      font-size: 2rem; /* Adjust font size for smaller screens */
+    }
+  
+    .dashboard-section {
+      padding: 0.8rem; /* Compact padding */
+      width: 100%; /* Ensure it fits smaller screens */
+    }
+  
+    .global-search {
+      font-size: 0.9rem; /* Adjust font size for search bar */
+      padding: 0.6rem; /* Reduce padding for smaller screens */
+    }
+  }
+  

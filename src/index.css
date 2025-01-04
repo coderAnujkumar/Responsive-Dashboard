@@ -1,0 +1,76 @@
+/* Apply basic reset for consistent styling across browsers */
+body {
+  overflow: visible; /* Ensure nothing is hidden */
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set up the root element */
+html, body, #root {
+  height: 100%; /* Full viewport height */
+  margin: 0;
+  font-family: 'Arial', sans-serif; /* Clean, modern font */
+  background-color: #f3f4f6; /* Light gray background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* App container styling */
+.app-container {
+  width: 100%;
+  max-width: 1200px; /* Restrict max width */
+  margin: 0 auto;
+  padding: 2rem;
+  background: #ffffff; /* White background */
+  border-radius: 10px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem; /* Space between child elements */
+}
+
+/* Add transitions for a smooth UI */
+body {
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Add hover effects for buttons or other interactive elements */
+button {
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+  transform: scale(1.05); /* Slight zoom effect */
+}
+/* General responsive resets */
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f3f4f6;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.app-container {
+  width: 100%;
+  max-width: 1200px;
+  padding: 1rem;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .app-container {
+    padding: 0.5rem;
+  }
+}
